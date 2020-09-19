@@ -1,0 +1,35 @@
+body {
+	font-size: 16px;
+	color: #fff;
+    /*background-image: url('../images/t4.jpg');*/
+	font-family: 'Ranchers', cursive;
+	background-color: #000;
+}
+
+#header-nav {
+		background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 19%, rgba(187,119,64,1) 100%, rgba(0,212,255,1) 100%);
+border-radius: 0;
+border: 0;
+height: 100px;
+opacity: 0.5;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+
+div::after {
+  content: "";
+  background: url('images/t4.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
